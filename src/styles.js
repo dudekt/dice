@@ -3,47 +3,49 @@ import { StyleSheet } from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#27ae60',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#2ecc71',
+    flexDirection: 'column',
   },
 
   wrapper: {
-    // borderColor: 'pink',
-    // borderStyle: 'solid',
-    // borderWidth: 1,
-
-    height: 100,
-    width: 100,
+    alignSelf: 'center',
+    justifyContent: 'center',
+    flex: 10,
+    height: 200,
+    width: 200,
   },
 
   dice: {
     position: 'absolute',
-
-    // borderColor: 'red',
-    // borderStyle: 'solid',
-    // borderWidth: 1,
-
-    height: 100,
-    width: 100,
+    height: 200,
+    width: 200,
   },
 
   diceSide: {
-    borderColor: 'pink',
-    borderStyle: 'dashed',
-    borderWidth: 1,
-
-    height: 100,
-    width: 100,
-
     backgroundColor: '#ffffff',
+    borderRadius: 20,
+    height: 200,
+    width: 200,
   },
 
-  diceSideFront: {
-    backgroundColor: '#ffffff',
+  number: {
+    fontSize: 100,
+    flex: 1,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+  },
 
-    height: 100,
-    width: 100,
+  text: {
+    color: 'white',
+    fontSize: 24,
+    flex: 1,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+  },
+
+  button: {
+    backgroundColor: '#27ae60',
+    flex: 1,
   },
 
 });

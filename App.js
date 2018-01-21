@@ -29,17 +29,25 @@ export default class App extends React.Component {
       >
         <View style={styles.wrapper}>
           <View style={styles.dice}>
-            <View style={styles.diceSideFront} />
-
+            <View style={styles.diceSide}>
+              <Text style={styles.number}>
+                {this.state.number}
+              </Text>
+            </View>
           </View>
         </View>
-        <Text>{this.state.number}</Text>
-        <Button
-          onPress={() => {
-            this.rollNumber()
-          }}
-          title="Press Me"
-        />
+        <View
+            style={styles.button}
+          >
+            <Text
+              style={styles.text}
+              onPress={() => {
+                this.rollNumber()
+              }}
+            >
+              Rzucaj kostką
+            </Text>
+        </View>
       </View>
     );
   }

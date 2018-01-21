@@ -1,5 +1,9 @@
 {
   "expo": {
-    "sdkVersion": "23.0.0"
+   "name": "Gods Dice",
+   "icon": "./icon.png",
+   "version": "1.0.0",
+   "slug": "Gods-Dice",
+   "sdkVersion": "23.0.0"
   }
 }
